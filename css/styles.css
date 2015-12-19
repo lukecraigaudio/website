@@ -1,0 +1,130 @@
+body {
+    background-color: grey;
+}
+
+.hidden-album {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: lightgrey;
+    background-blend-mode: screen;
+}
+
+#album-details-1 {
+    background-image: url(../images/kevin-max.jpeg);
+}
+
+#album-details-2 {
+    background-image: url(../images/aubryn.jpg);
+}
+
+#album-details-3 {
+    background-image: url(../images/ben-sturgell.jpg);
+}
+
+#album-details-4 {
+    background-image: url(../images/gnarly-parkers.jpeg);
+}
+
+#album-details-5 {
+    background-image: url(../images/adam-searan.jpg);
+}
+
+.song-list {}
+
+.description {
+    padding-left: 1em;
+}
+
+.img-grid {
+    padding-right: 2%;
+    padding-bottom: 3%;
+}
+
+img:hover {
+    outline: groove black;
+}
+
+.album-details {
+    display: none;
+}
+
+audio {
+    width: 80%;
+}
+
+.grey-box {
+    background-color: lightslategrey;
+}
+
+#header-image {
+    background-image: url(../images/console.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: darkgray;
+    background-blend-mode: multiply;
+}
+
+#albums-and-details {
+    background-color: #9e9e9e;
+}
+
+footer {
+    background-color: bisque;
+}
+
+#other-work {
+    height: 20em;
+    
+}
+
+.header-text {
+    color: gainsboro;
+}
+
+/*
+ *  STYLE 10
+ */
+
+#other-work::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+#other-work::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#other-work::-webkit-scrollbar-thumb {
+    background-color: #AAA;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .2) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, .2) 50%, rgba(0, 0, 0, .2) 75%, transparent 75%, transparent)
+}
+#contact {
+    background-color: antiquewhite;
+    color: black;
+}
+
+
+
+
+
+blockquote {
+    
+}
+
+#testimonials {
+     height: 20em;
+   text-overflow: ellipsis;
+     margin: 0px 0;
+}
+
+.dark-transparent {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.scrollbar {
+    overflow-y: scroll;
+}
