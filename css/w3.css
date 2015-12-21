@@ -1,4 +1,4 @@
-﻿/* W3.CSS 1.74 by J.E.Refsnes. Do not remove this line. */
+/* W3.CSS 1.74 by J.E.Refsnes. Do not remove this line. */
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
@@ -263,6 +263,7 @@ position:relative;-webkit-animation-name:animateleft;-webkit-animation-duration:
 position:relative;-webkit-animation-name:animateright;-webkit-animation-duration:0.4s;animation-name:animateright;animation-duration:0.4s}
 @-webkit-keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
 @keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
 /* BOTTOM */
 .w3-animate-bottom{
 position:relative;-webkit-animation-name:animatebottom;-webkit-animation-duration:0.4s;animation-name:animatebottom;animation-duration:0.4s}

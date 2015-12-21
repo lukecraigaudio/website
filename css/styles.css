@@ -14,6 +14,7 @@ body {
     background-size: cover;
     background-color: lightgrey;
     background-blend-mode: screen;
+    color: #38353A;
 }
 
 #album-details-1 {
@@ -118,13 +119,60 @@ footer {
 #testimonials {
      height: 20em;
    text-overflow: ellipsis;
-     margin: 0px 0;
+  
 }
 
 .dark-transparent {
     background-color: rgba(0,0,0,0.3);
+   
 }
 
 .scrollbar {
     overflow-y: scroll;
+}
+
+#line-dark {
+    height: 1px;
+    background-color: #38353A;
+}
+#line-white{
+    height: 1px;
+    background-color: #E2DFD9;
+}
+#line-red{
+    height: 1px;
+    background-color: #C0364A;
+}
+#line-teal{
+    height: 1px;
+    background-color: #1A8A80;
+}
+#line-blue{
+    height: 2px;
+    background-color: #788A93;
+}
+.contact {
+     background-color: #E2DFD9;
+    color: #38353A;
+}
+
+#contact-left {
+    text-align: right;
+}
+
+#middle-stuff {
+    
+}
+
+.margin-top-bottom {
+     margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#main {
+    color: #38353A;
+}
+
+#scroll-to-bottom {
+    color: #645c5c;
 }

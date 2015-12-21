@@ -38,10 +38,24 @@
             });
         });
     </script>
-
+<script>
+function slideingFunction() {
+    setTimeout(removeSliding, 400);
+    document.getElementById('the-album-details-that-animate').classList.add('w3-animate-right');
+    setTimeout(removeSliding, 400);
+}
+function removeSliding() {
+    document.getElementById('the-album-details-that-animate').classList.remove('w3-animate-right');
+}
+</script> 
 </head>
 
 <body>
+    <div id="line-white"></div>
+    <div id="line-red"></div>
+
+    <div id="line-teal"></div>
+    <div id="line-dark"></div>
     <div id="header-image">
         <div class="w3-row header-text">
             <div class="w3-col  m6 l5">
@@ -53,7 +67,9 @@
                 <p>I track, edit and mix records. I work in Nashville, primarily at <a href="http://theboomlabs.com/creative-caffeine/gallery-of-studio/">Creative Caffeine Studios</a> with producer Pino Squillace. No matter what stage of the process I'm involved in, I strive to cultivate the inchoate emotion and character that exists in songs as they bloom into beautiful records. I think an engineer's work should speak for itself, so here's mine:</p>
             </div>
         </div>
+        <div id="line-dark"></div>
 
+        <div id="line-white"></div>
         <div id="albums-and-details" class="w3-row">
 
             <div class="w3-col w3-container m6 l5 w3-animate-left" id="main">
@@ -62,31 +78,31 @@
                     <!--Kevin Max Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2">
-                            <a class="showAlbum" target="1" href="#album-details"> <img class="album-img" src="images/kevin-max.jpeg" style="width:100%"></a>
+                            <a class="showAlbum" target="1" href="#album-details" onclick="slideingFunction();"> <img class="album-img" src="images/kevin-max.jpeg" style="width:100%"></a>
                         </div>
                     </div>
                     <!--Aubryn Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2">
-                            <a class="showAlbum" target="2" href="#album-details"> <img class="album-img" src="images/aubryn.jpg" style="width:100%"></a>
+                            <a class="showAlbum" target="2" href="#album-details" onclick="slideingFunction();"> <img class="album-img" src="images/aubryn.jpg" style="width:100%"></a>
                         </div>
                     </div>
                     <!--Ben Sturgell Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2">
-                            <a class="showAlbum" target="3" href="#album-details"> <img class="album-img" src="images/ben-sturgell.jpg" style="width:100%"></a>
+                            <a class="showAlbum" target="3" href="#album-details" onclick="slideingFunction();"> <img class="album-img" src="images/ben-sturgell.jpg" style="width:100%"></a>
                         </div>
                     </div>
                     <!--Gnarly Parkers Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2">
-                            <a class="showAlbum" target="4" href="#album-details"> <img class="album-img" src="images/gnarly-parkers.jpeg" style="width:100%"></a>
+                            <a class="showAlbum" target="4" href="#album-details" onclick="slideingFunction();"> <img class="album-img" src="images/gnarly-parkers.jpeg" style="width:100%"></a>
                         </div>
                     </div>
                     <!--Adam Searan Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2">
-                            <a class="showAlbum" target="5" href="#album-details"> <img class="album-img" src="images/adam-searan.jpg" style="width:100%"></a>
+                            <a class="showAlbum" target="5" href="#album-details" onclick="slideingFunction();"> <img class="album-img" src="images/adam-searan.jpg" style="width:100%"></a>
                         </div>
                     </div>
                 </div>
@@ -95,7 +111,7 @@
                 </div>
             </div>
 
-            <div class="w3-col m6 l7 w3-animate-right">
+            <div id="the-album-details-that-animate" class="w3-col m6 l7 w3-animate-right">
                 <div id="album-details">
                     <!--Kevin Details-->
                     <div class="w3-row hidden-album" id="album-details-1">
@@ -274,9 +290,13 @@
                 </div>
             </div>
         </div>
+        <div id="line-dark"></div>
+        <div id="line-blue"></div>
+        <div id="line-white"></div>
+
         <div class="w3-row header-text " id="middle-stuff">
 
-            <div id="other-work" class="w3-col m6 l5 w3-container scrollbar">
+            <div id="other-work" class="w3-col m6 l5 w3-container scrollbar margin-top-bottom">
                 <div class="dark-transparent w3-container">
                     <h2>Other Work</h2>
                     <ul>
@@ -301,7 +321,7 @@
             </div>
 
             <div class="w3-col m6 l7 w3-container">
-                <div id="testimonials" class="dark-transparent w3-container">
+                <div id="testimonials" class="dark-transparent w3-container margin-top-bottom">
                     <h2>Testimonials</h2>
                     <div class="quotes">
                         <blockquote>
@@ -340,19 +360,26 @@
                 </div>
             </div>
         </div>
+        <div id="line-white"></div>
+        <div id="line-blue"></div>
         <div class="w3-col m12 l12 w3-container" id="contact">
             <h2>Contact</h2>
             <h4>828-773-3555</h4>
             <h4>lukecraigaudio@gmail.com</h4>
         </div>
-    </div>
 
     </div>
+    </div>
+
+
     <footer class="footer">
-        <div class="w3-row w3-center">
 
-            <p>Copyright Luke Craig. Site design by Luke Craig.</p>
-
+        <div class="w3-row ">
+            <div class="w3-col w3-center ">
+                <div id="line-white"></div>
+                <div id="line-blue"></div>
+                <p>Copyright Luke Craig. Site design by Luke Craig.</p>
+            </div>
         </div>
     </footer>
 
