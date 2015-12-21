@@ -1,5 +1,12 @@
+/*Colors
+Dark: #38353A
+Red: #C0364A
+White: #E2DFD9
+Teal: #1A8A80
+Blue-Grey: #788A93
+*/
 body {
-    background-color: grey;
+    background-color: #788A93;
 }
 
 .hidden-album {
@@ -41,7 +48,7 @@ body {
 }
 
 img:hover {
-    outline: groove black;
+    outline: groove #38353A;
 }
 
 .album-details {
@@ -53,7 +60,7 @@ audio {
 }
 
 .grey-box {
-    background-color: lightslategrey;
+    background-color: #788A93;
 }
 
 #header-image {
@@ -66,11 +73,12 @@ audio {
 }
 
 #albums-and-details {
-    background-color: #9e9e9e;
+    background-color: #788A93;
 }
 
 footer {
-    background-color: bisque;
+    background-color: #C0364A;
+    color: #E2DFD9;
 }
 
 #other-work {
@@ -79,7 +87,7 @@ footer {
 }
 
 .header-text {
-    color: gainsboro;
+    color: #E2DFD9;
 }
 
 /*
@@ -88,13 +96,13 @@ footer {
 
 #other-work::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #F5F5F5;
+    background-color: #788A93;
     border-radius: 10px;
 }
 
 #other-work::-webkit-scrollbar {
     width: 10px;
-    background-color: #F5F5F5;
+    background-color: #788A93;
 }
 
 #other-work::-webkit-scrollbar-thumb {
@@ -103,16 +111,8 @@ footer {
     background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .2) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, .2) 50%, rgba(0, 0, 0, .2) 75%, transparent 75%, transparent)
 }
 #contact {
-    background-color: antiquewhite;
-    color: black;
-}
-
-
-
-
-
-blockquote {
-    
+    background-color: #E2DFD9;
+    color: #38353A;
 }
 
 #testimonials {
