@@ -38,16 +38,17 @@
             });
         });
     </script>
-<script>
-function slideingFunction() {
-    setTimeout(removeSliding, 400);
-    document.getElementById('the-album-details-that-animate').classList.add('w3-animate-right');
-    setTimeout(removeSliding, 400);
-}
-function removeSliding() {
-    document.getElementById('the-album-details-that-animate').classList.remove('w3-animate-right');
-}
-</script> 
+    <script>
+        function slideingFunction() {
+            setTimeout(removeSliding, 400);
+            document.getElementById('the-album-details-that-animate').classList.add('w3-animate-right');
+            setTimeout(removeSliding, 400);
+        }
+
+        function removeSliding() {
+            document.getElementById('the-album-details-that-animate').classList.remove('w3-animate-right');
+        }
+    </script>
 </head>
 
 <body>
@@ -60,7 +61,7 @@ function removeSliding() {
         <div class="w3-row header-text">
             <div class="w3-col  m6 l5">
                 <div class="w3-col w3-container">
-                    <h1 id="the-header">LukeCraig.Audio</h1>
+                    <h1>LukeCraig.Audio</h1>
                 </div>
             </div>
             <div class="w3-col w3-container  m12 l7">
@@ -73,7 +74,7 @@ function removeSliding() {
         <div id="albums-and-details" class="w3-row">
 
             <div class="w3-col w3-container m6 l5 w3-animate-left" id="main">
-                <h2>Projects I've Worked on</h2>
+                <h2>Projects</h2>
                 <div id="album-grid">
                     <!--Kevin Max Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
@@ -116,9 +117,9 @@ function removeSliding() {
                     <!--Kevin Details-->
                     <div class="w3-row hidden-album" id="album-details-1">
                         <div class="w3-container">
-                            <h2>Kevin Max</h2>
-                            <h3>Starry Eyes Surprise</h3>
-                            <h4>Tracking/Editing/Mixing</h4>
+                            <h3>Kevin Max</h3>
+                            <h4>Starry Eyes Surprise</h4>
+                            <h5>Tracking/Editing/Mixing</h5>
                             <p>Kevin's creativity and masterfulness as a singer make him a joy to engineer for.</p>
                             <ol>
                                 <li>Under The Milky Way Tonight
@@ -153,9 +154,14 @@ function removeSliding() {
                     <!--Aubryn Details-->
                     <div class="w3-row  hidden-album" id="album-details-2">
                         <div class="w3-container">
-                            <h2>Aubryn</h2>
-                            <h3>Nothin' Civil EP</h3>
-                            <h4>Tracking/Editing/Mixing</h4>
+                            <h3>Aubryn</h3>
+                            <h4>Nothin' Civil EP</h4>
+                            <h5>Tracking/Editing/Mixing</h5>
+                            <div class="buy-thumbnail-div">
+                                <a href="https://itunes.apple.com/us/album/nothin-civil/id1058034911">
+                                    <img class="buy-thumbnail" src="images/aubryn.jpg"> Buy it here.
+                                </a>
+                            </div>
                             <p>Aubryn is an award winning singer songwriter. She started this album with Pino around the time when I was starting to engineer at Creative Caffeine. I'm glad I was able to be the main engineer, apart from interns and assistants, to have worked on it from start to finish. It is an eclectic album, to say the least.</p>
                             <ol>
                                 <li>Nothin' Civil
@@ -202,8 +208,8 @@ function removeSliding() {
                     <!--Ben Sturgell Details-->
                     <div class="w3-row  hidden-album" id="album-details-3">
                         <div class="w3-container">
-                            <h2>Ben Sturgell</h2>
-                            <h3>Music Box</h3>
+                            <h3>Ben Sturgell</h3>
+                            <h4>Music Box</h4>
                             <p>Music Box was the first project I was involved with when I started working with Pino at Creative Caffeine. I was involved in tracking and editing almost all of the songs. I am greatful to have been able to mix one of the songs.</p>
                             <ul>
                                 <li>Drive <i>(Tracking/Editing/Mixing)</i>
@@ -220,9 +226,9 @@ function removeSliding() {
                     <!--Gnarly Parkers Details-->
                     <div class="w3-row  hidden-album" id="album-details-4">
                         <div class="w3-container">
-                            <h2>Gnarly Parkers</h2>
-                            <h3>Hop Heads EP</h3>
-                            <h4>Tracking</h4>
+                            <h3>Gnarly Parkers</h3>
+                            <h4>Hop Heads EP</h4>
+                            <h5>Tracking</h5>
                             <p>Tracking this EP with all of the Gnarly Parkers at Creative Caffeine was loads of fun. They wanted an authentic swing record that had the polish of modern sounds.</p>
                             <ol>
                                 <li>Big Ass World
@@ -269,9 +275,8 @@ function removeSliding() {
                     <!--Adam Searan-->
                     <div class="w3-row  hidden-album" id="album-details-5">
                         <div class="w3-container">
-                            <h2>Adam Searan</h2>
-
-                            <h4>Tracking/Editing/Mixing</h4>
+                            <h3>Adam Searan</h3>
+                            <h5>Tracking/Editing/Mixing</h5>
                             <p>Adam is an up and coming country music star who placed #2 in Nash Next 2015. We had been using Adam as a session player on some of other projects, so when he came to us to for his song Rescue we were more than happy to help.</p>
                             <ul>
                                 <li>Rescue
