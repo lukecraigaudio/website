@@ -174,7 +174,7 @@ footer {
 }
 
 #main {
-    color: #38353A;
+    color: #E2DFD9;
 }
 
 #scroll-to-bottom {
@@ -187,12 +187,58 @@ footer {
 
 .buy-thumbnail-div {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 16px;
     width: 80px;
-    font-size-adjust: auto;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .buy-thumbnail-div:hover {
     outline: groove #E2DFD9;
+}
+#the-header {
+    background-color: rgba(192,54,74,0.80);
+    margin-left: -1000px;
+   
+    position: relative;
+}
+
+
+
+#the-header-text {
+    margin-left: 1000px;
+   
+}
+
+.ribbon {
+   
+   
+    background: rgba(192,54,74,0.80);
+    position: absolute;
+    z-index: 2;
+}
+
+.ribbon.right {
+    top: 54px;
+    right: 0;
+}
+
+
+
+.ribbon.right:after {
+    content: "";
+    position: absolute;
+    right: -29px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid rgba(192,54,74,0.80);
+    border-top: 52px solid transparent;
+    border-bottom: 0 solid transparent;
+}
+
+.header-text p  {
+    margin-top:10px;
 }
