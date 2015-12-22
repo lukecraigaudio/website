@@ -43,6 +43,7 @@ body {
 
 .description {
     padding-left: 1em;
+
 }
 
 .img-grid {
@@ -73,6 +74,7 @@ audio {
     background-size: cover;
     background-color: darkgray;
     background-blend-mode: multiply;
+    overflow: hidden;
 }
 
 #albums-and-details {
@@ -130,6 +132,7 @@ footer {
 
 .scrollbar {
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #line-dark {
@@ -222,7 +225,7 @@ footer {
 
 .ribbon.right {
     top: 54px;
-    right: 0;
+    right: -1px;
 }
 
 
@@ -241,4 +244,8 @@ footer {
 
 .header-text p  {
     margin-top:10px;
+}
+
+article {
+     max-height: 6em; /* (4 * 1.5 = 6) */
 }
