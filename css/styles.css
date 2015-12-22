@@ -6,8 +6,41 @@ Teal: #1A8A80
 Blue-Grey: #788A93
 */
 
+html {
+   
+}
+
 body {
     background-color: #788A93;
+    background-image: url(../images/console.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: darkgray;
+    background-blend-mode: multiply;
+}
+@media screen and (max-width: 480px) {
+    body {
+        background-image: none;
+        
+    }
+    #header-image {
+        background-image: url(../images/console.jpg);
+         background-repeat: no-repeat;
+        background-color: darkgray;
+        background-blend-mode: multiply;
+    }
+    #middle-stuff {
+        background-image: url(../images/console.jpg);
+         background-repeat: no-repeat;
+        background-color: darkgray;
+        background-blend-mode: multiply;
+        background-size: cover;
+    }
 }
 
 .hidden-album {
@@ -43,7 +76,6 @@ body {
 
 .description {
     padding-left: 1em;
-
 }
 
 .img-grid {
@@ -68,12 +100,6 @@ audio {
 }
 
 #header-image {
-    background-image: url(../images/console.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: darkgray;
-    background-blend-mode: multiply;
     overflow: hidden;
 }
 
@@ -96,7 +122,7 @@ footer {
 
 
 /*
- *  STYLE 10
+ *  Scrollbar
  */
 
 #other-work::-webkit-scrollbar-track {
@@ -201,24 +227,19 @@ footer {
 .buy-thumbnail-div:hover {
     outline: groove #E2DFD9;
 }
+
 #the-header {
-    background-color: rgba(192,54,74,0.80);
+    background-color: rgba(192, 54, 74, 0.80);
     margin-left: -1000px;
-   
     position: relative;
 }
 
-
-
 #the-header-text {
     margin-left: 1000px;
-   
 }
 
 .ribbon {
-   
-   
-    background: rgba(192,54,74,0.80);
+    background: rgba(192, 54, 74, 0.80);
     position: absolute;
     z-index: 2;
 }
@@ -228,8 +249,6 @@ footer {
     right: -1px;
 }
 
-
-
 .ribbon.right:after {
     content: "";
     position: absolute;
@@ -237,15 +256,19 @@ footer {
     bottom: 0;
     width: 0;
     height: 0;
-    border-left: 30px solid rgba(192,54,74,0.80);
+    border-left: 30px solid rgba(192, 54, 74, 0.80);
     border-top: 52px solid transparent;
     border-bottom: 0 solid transparent;
 }
 
-.header-text p  {
-    margin-top:10px;
+.header-text p {
+    margin-top: 10px;
+}
+footer p{
+    font-size: 12px;
 }
 
 article {
-     max-height: 6em; /* (4 * 1.5 = 6) */
+    max-height: 6em;
+    /* (4 * 1.5 = 6) */
 }
