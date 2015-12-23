@@ -142,7 +142,7 @@
                                 </li>
                                 <li>Last Night I Dreamt That Somebody Loved Me
                                     
-                                        <p class="description">I grew up loving The Smiths so to do a cover with Kevin was a real treat. I even got to play my bouzouki in it. Mixing a 13 minute song is a welcome challenge because you have to find ways to keep the listener intrested. I also try to keep things subtle enough so that there's a reward for multiple listenings. I recorded the cicadas in the treehouse behind Creative Caffeine and used some studio tricks to make them in rhythm with the music. I wanted the "All I want is you" background vocals to sound like giant heads looking down at the listener as spotlights illuminate them in the night.</p>
+                                        <p class="description">I grew up loving The Smiths so to do a cover with Kevin was a real treat. I even got to play my bouzouki in it. Mixing a 13 minute song is a welcome challenge because you have to find ways to keep the listener intrested. <a class="read-more-show hide" href="#">Read More</a> <span class="read-more-content"> I also try to keep things subtle enough so that there's a reward for multiple listenings. I recorded the cicadas in the treehouse behind Creative Caffeine and used some studio tricks to make them in rhythm with the music. I wanted the "All I want is you" background vocals to sound like giant heads looking down at the listener as spotlights illuminate them in the night. <a class="read-more-hide hide" href="#">Read Less</a></span></p>
                                     
                                     <audio controls preload="none">
                                         <source src="audio/KevinMax/LastNightIDreamtSomebodyLovedMe.mp3" type="audio/mpeg"> Your browser does not support the audio element.
@@ -452,5 +452,25 @@
     </footer>
 
 </body>
+<script>
+// Hide the extra content initially, using JS so that if JS is disabled, no problemo:
+$('.read-more-content').addClass('hide')
+$('.read-more-show, .read-more-hide').removeClass('hide')
+
+// Set up the toggle effect:
+$('.read-more-show').on('click', function(e) {
+  $(this).next('.read-more-content').removeClass('hide');
+  $(this).addClass('hide');
+  e.preventDefault();
+});
+
+// Changes contributed by @diego-rzg
+$('.read-more-hide').on('click', function(e) {
+  var p = $(this).parent('.read-more-content');
+  p.addClass('hide');
+  p.prev('.read-more-show').removeClass('hide'); // Hide only the preceding "Read More"
+  e.preventDefault();
+});
+</script>
 
 </html>

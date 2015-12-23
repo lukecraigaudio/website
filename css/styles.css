@@ -121,6 +121,10 @@ footer {
     padding-left: 1em;
 }
 
+.hide {
+  display: none;
+}
+
 /*
  *  Scrollbar
  */
