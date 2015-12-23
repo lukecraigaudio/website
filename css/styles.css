@@ -6,8 +6,8 @@ Teal: #1A8A80
 Blue-Grey: #788A93
 */
 
-html {
-   
+article + [data-readmore-toggle], article[data-readmore]{
+    padding-left: 1em;
 }
 
 body {
@@ -74,9 +74,7 @@ body {
 
 .song-list {}
 
-.description {
-    padding-left: 1em;
-}
+
 
 .img-grid {
     padding-right: 2%;
