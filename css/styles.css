@@ -6,9 +6,7 @@ Teal: #1A8A80
 Blue-Grey: #788A93
 */
 
-article + [data-readmore-toggle], article[data-readmore]{
-    padding-left: 1em;
-}
+
 
 body {
     background-color: #788A93;
@@ -118,6 +116,10 @@ footer {
     color: #E2DFD9;
 }
 
+
+.description{
+    padding-left: 1em;
+}
 
 /*
  *  Scrollbar
