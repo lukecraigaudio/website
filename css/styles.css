@@ -9,7 +9,7 @@ Blue-Grey: #788A93
 
 
 body {
-    background-color: #788A93;
+    background-color: #38353A;
     background-image: url(../images/console.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,8 +18,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color: darkgray;
-    background-blend-mode: multiply;
+   
+   
 }
 @media screen and (max-width: 480px) {
     body {
@@ -30,13 +30,13 @@ body {
         background-image: url(../images/console.jpg);
          background-repeat: no-repeat;
         background-color: darkgray;
-        background-blend-mode: multiply;
+        
     }
     #middle-stuff {
         background-image: url(../images/console.jpg);
          background-repeat: no-repeat;
         background-color: darkgray;
-        background-blend-mode: multiply;
+       
         background-size: cover;
     }
 }
