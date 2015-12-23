@@ -141,7 +141,7 @@ footer {
 }
 
 #other-work::-webkit-scrollbar-thumb {
-    background-color: #AAA;
+    background-color: #E2DFD9;
     border-radius: 10px;
     background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, .2) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, .2) 50%, rgba(0, 0, 0, .2) 75%, transparent 75%, transparent)
 }
@@ -165,27 +165,27 @@ footer {
     overflow-x: hidden;
 }
 
-#line-dark {
+.line-dark {
     height: 1px;
     background-color: #38353A;
 }
 
-#line-white {
+.line-white {
     height: 1px;
     background-color: #E2DFD9;
 }
 
-#line-red {
+.line-red {
     height: 1px;
     background-color: #C0364A;
 }
 
-#line-teal {
+.line-teal {
     height: 1px;
     background-color: #1A8A80;
 }
 
-#line-blue {
+.line-blue {
     height: 2px;
     background-color: #788A93;
 }

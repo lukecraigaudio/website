@@ -4,11 +4,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta title="LukeCraig.Audio" />
+    <meta name="author" content="Luke Craig">
+    <meta name="description" content="Luke Craig is an audio engineer in Nashville, TN.">
+    <meta name="keywords" content="music,mixing,audio,engineer,hip hop,rock,americana,experimental,pro tools,trippy,nashville">
+
     <link rel="stylesheet" href="css/w3.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-   
+
     <script>
         jQuery(function () {
             // Hide all the album details
@@ -35,7 +40,7 @@
             document.getElementById('the-album-details-that-animate').classList.remove('w3-animate-right');
         }
     </script>
-     <script>
+    <script>
         $(function () {
             $('a[href*=#]:not([href=#])').click(function () {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -61,11 +66,11 @@
 </head>
 
 <body>
-    <div id="line-white"></div>
-    <div id="line-red"></div>
+    <div class="line-white"></div>
+    <div class="line-red"></div>
 
-    <div id="line-teal"></div>
-    <div id="line-dark"></div>
+    <div class="line-teal"></div>
+    <div class="line-dark"></div>
     <div id="header-image">
         <div class="w3-row header-text">
             <div class="w3-col  m6 l5">
@@ -80,9 +85,9 @@
                 <p>I track, edit and mix records. I work in Nashville, primarily at <a href="http://theboomlabs.com/creative-caffeine/gallery-of-studio/">Creative Caffeine Studios</a> with producer Pino Squillace. No matter what stage of the process I'm involved in, I strive to cultivate the inchoate emotion and character that exists in songs as they bloom into beautiful records. I think an engineer's work should speak for itself, so here's mine:</p>
             </div>
         </div>
-        <div id="line-dark"></div>
+        <div class="line-dark"></div>
 
-        <div id="line-white"></div>
+        <div class="line-white"></div>
         <div id="albums-and-details" class="w3-row">
 
             <div class="w3-col w3-container m6 l5 w3-animate-left" id="main">
@@ -91,31 +96,31 @@
                     <!--Kevin Max Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2">
-                            <a class="showAlbum" target="1" href="#album-details-1" onclick="slideingFunction();"> <img class="album-img" src="images/kevin-max.jpeg" style="width:100%"></a>
+                            <a class="showAlbum" target="1" href="#album-details-1" onclick="slideingFunction();"> <img class="album-img" alt="Kevin Max - Starry Eyes Suprise" src="images/kevin-max.jpeg" style="width:100%"></a>
                         </div>
                     </div>
                     <!--Aubryn Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2">
-                            <a class="showAlbum" target="2" href="#album-details-2" onclick="slideingFunction();"> <img class="album-img" src="images/aubryn.jpg" style="width:100%"></a>
+                            <a class="showAlbum" target="2" href="#album-details-2" onclick="slideingFunction();"> <img class="album-img" alt="Aubryn - Nothin' Civil" src="images/aubryn.jpg" style="width:100%"></a>
                         </div>
                     </div>
                     <!--Ben Sturgell Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2">
-                            <a class="showAlbum" target="3" href="#album-details-3" onclick="slideingFunction();"> <img class="album-img" src="images/ben-sturgell.jpg" style="width:100%"></a>
+                            <a class="showAlbum" target="3" href="#album-details-3" onclick="slideingFunction();"> <img class="album-img" src="images/ben-sturgell.jpg" style="width:100%" alt="Ben Sturgell - Music Box"></a>
                         </div>
                     </div>
                     <!--Gnarly Parkers Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2">
-                            <a class="showAlbum" target="4" href="#album-details-4" onclick="slideingFunction();"> <img class="album-img" src="images/gnarly-parkers.jpeg" style="width:100%"></a>
+                            <a class="showAlbum" target="4" href="#album-details-4" onclick="slideingFunction();"> <img class="album-img" alt="Gnarly Parkers - Hop Heads EP" src="images/gnarly-parkers.jpeg" style="width:100%"></a>
                         </div>
                     </div>
                     <!--Adam Searan Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2">
-                            <a class="showAlbum" target="5" href="#album-details-5" onclick="slideingFunction();"> <img class="album-img" src="images/adam-searan.jpg" style="width:100%"></a>
+                            <a class="showAlbum" target="5" href="#album-details-5" onclick="slideingFunction();"> <img class="album-img" src="images/adam-searan.jpg" style="width:100%" alt="Adam Searan - Rescue"></a>
                         </div>
                     </div>
                 </div>
@@ -135,7 +140,7 @@
                             <h5>Tracking/Editing/Mixing</h5>
                             <div class="buy-thumbnail-div">
                                 <a target="_blank" href="https://missinginkshop.com/kevinmax/store/starry-eyes-surprise">
-                                    <img class="buy-thumbnail" src="images/kevin-max.jpeg"> Buy it
+                                    <img class="buy-thumbnail" src="images/kevin-max.jpeg" alt="Buy Starry Eyes Suprise"> Buy it
                                 </a>
                             </div>
                             <p>Kevin's creativity and masterfulness as a singer make him a joy to engineer for.</p>
@@ -185,7 +190,7 @@
                             <h5>Tracking/Editing/Mixing</h5>
                             <div class="buy-thumbnail-div">
                                 <a target="_blank" href="http://aubrynmusic.bandcamp.com/album/nothin-civil-ep">
-                                    <img class="buy-thumbnail" src="images/aubryn.jpg"> Buy it
+                                    <img class="buy-thumbnail" src="images/aubryn.jpg" alt="Buy Nothin' Civil"> Buy it
                                 </a>
                             </div>
                             <p>Aubryn is an award winning singer songwriter. She started this album with Pino around the time when I was starting to engineer at Creative Caffeine. I'm glad I was able to be the main engineer, apart from interns and assistants, to have worked on it from start to finish. It is an eclectic album, to say the least.</p>
@@ -222,7 +227,7 @@
                                         <source src="audio/Aubryn/LadyAboutTown.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                                     </audio>
                                 </li>
-                                </li>
+
                                 <li>Murder Ballad Blues
 
                                     <p class="description">Another song that needed to sound creepy, but this time with a blues element to it.</p>
@@ -250,7 +255,7 @@
                             <h4>Music Box</h4>
                             <div class="buy-thumbnail-div">
                                 <a target="_blank" href="https://itunes.apple.com/us/album/music-box/id994931490">
-                                    <img class="buy-thumbnail" src="images/ben-sturgell.jpg"> Buy it
+                                    <img class="buy-thumbnail" src="images/ben-sturgell.jpg" alt="Buy Music Box"> Buy it
                                 </a>
                             </div>
                             <p>Music Box was the first project I was involved with when I started working with Pino at Creative Caffeine. I was involved in tracking and editing almost all of the songs. I am greatful to have been able to mix one of the songs.</p>
@@ -276,7 +281,7 @@
                             <h5>Tracking</h5>
                             <div class="buy-thumbnail-div">
                                 <a target="_blank" href="https://itunes.apple.com/us/album/hop-heads-ep/id1031378634">
-                                    <img class="buy-thumbnail" src="images/gnarly-parkers.jpeg"> Buy it
+                                    <img class="buy-thumbnail" src="images/gnarly-parkers.jpeg" alt="Buy Hop Heads EP"> Buy it
                                 </a>
                             </div>
                             <p>Tracking this EP with all of the Gnarly Parkers at Creative Caffeine was loads of fun. They wanted an authentic swing record that had the polish of modern sounds.</p>
@@ -304,7 +309,7 @@
                                     <audio controls preload="none">
                                         <source src="audio/GnarlyParkers/HopHead.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                                     </audio>
-                                </li>
+
                                 </li>
                                 <li>Sammy Shake
 
@@ -341,7 +346,7 @@
                             <h5>Tracking/Editing/Mixing</h5>
                             <div class="buy-thumbnail-div">
                                 <a target="_blank" href="http://www.iamtheband.net/">
-                                    <img class="buy-thumbnail" src="images/adam-searan.jpg">Adam
+                                    <img class="buy-thumbnail" src="images/adam-searan.jpg" alt="Go to Adam's Website">Adam
                                 </a>
                             </div>
                             <p>Adam is an up and coming country music star who placed #2 in Nash Next 2015. We had been using Adam as a session player on some of other projects, so when he came to us to for his song Rescue we were more than happy to help.</p>
@@ -364,9 +369,9 @@
                 </div>
             </div>
         </div>
-        <div id="line-dark"></div>
-        <div id="line-blue"></div>
-        <div id="line-white"></div>
+        <div class="line-dark"></div>
+        <div class="line-blue"></div>
+        <div class="line-white"></div>
 
 
 
@@ -436,12 +441,12 @@
                 </div>
             </div>
         </div>
-        <div id="line-white"></div>
-        <div id="line-blue"></div>
+        <div class="line-white"></div>
+        <div class="line-blue"></div>
         <div class="w3-col m12 l12 w3-container" id="contact">
             <h2>Contact</h2>
             <h4>
-               <script type="text/javascript" language="javascript">
+               <script type="text/javascript" >
 
 { coded = "VGV-aa2-2PPP"
   key = "6lINhTcjXEGygo7KbRdDMx4FpWaSzmQu89e50ZHOLvqAVfYP3s1tUnCwBrik2J"
@@ -464,7 +469,7 @@ document.write(""+link+"")
 
 </h4>
             <h4>
-            <script type="text/javascript" language="javascript">
+            <script type="text/javascript" >
 
 { coded = "rLB6UqGdTGLAdR@TWGdr.URW"
   key = "ak7jcJ6sg5rbA3Yfuy8hCo0WGBipUwxZT4qFQVDnLtMNeRHElKdP1S2X9vOzIm"
@@ -486,9 +491,9 @@ document.write("<a href='mailto:"+link+"'>"+link+"</a>")
 </script><noscript>Sorry, you need Javascript on to email me.</noscript>
 
             </h4>
-        </div>
 
-    </div>
+
+        </div>
     </div>
 
 
@@ -496,14 +501,14 @@ document.write("<a href='mailto:"+link+"'>"+link+"</a>")
 
         <div class="w3-row ">
             <div class="w3-col w3-center ">
-                <div id="line-white"></div>
-                <div id="line-blue"></div>
+                <div class="line-white"></div>
+                <div class="line-blue"></div>
                 <p>Copyright Luke Craig. Site design by Luke Craig.</p>
             </div>
         </div>
     </footer>
 
-</body>
+
 <script>
     // Hide the extra content initially, using JS so that if JS is disabled, no problemo:
     $('.read-more-content').addClass('hide')
@@ -524,5 +529,5 @@ document.write("<a href='mailto:"+link+"'>"+link+"</a>")
         e.preventDefault();
     });
 </script>
-
+</body>
 </html>
