@@ -32,7 +32,7 @@ body {
         background-color: darkgray;
         
     }
-    #middle-stuff {
+    #more-work {
         background-image: url(../images/console.jpg);
          background-repeat: no-repeat;
         background-color: darkgray;
@@ -199,7 +199,7 @@ footer {
     text-align: right;
 }
 
-#middle-stuff {}
+#more-work {}
 
 .margin-top-bottom {
     margin-top: 10px;
