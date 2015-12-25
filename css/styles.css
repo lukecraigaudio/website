@@ -21,6 +21,8 @@ body {
    
    
 }
+
+
 @media screen and (max-width: 480px) {
     body {
         background-image: none;
@@ -104,13 +106,11 @@ audio {
 }
 
 footer {
-    background-color: #C0364A;
-    color: #E2DFD9;
+    background-color: #E2DFD9;
+    color: #38353A;
 }
 
-#other-work {
-    height: 20em;
-}
+
 
 .header-text {
     color: #E2DFD9;
@@ -147,8 +147,8 @@ footer {
 }
 
 #contact {
-    background-color: #E2DFD9;
-    color: #38353A;
+    background-color: #C0364A;
+    color: #E2DFD9;
 }
 
 #testimonials {
@@ -281,3 +281,11 @@ article {
 .no-background-blend-mode {
   background-image: none !important;
 }    
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+}
