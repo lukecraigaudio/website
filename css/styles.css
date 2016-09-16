@@ -53,7 +53,7 @@ body {
 }
 
 #album-details-1 {
-    background-image: url(../images/kevin-max.jpeg);
+    background-image: url(../images/kaitee-carney.jpg);
 }
 
 #album-details-2 {
@@ -288,4 +288,16 @@ ul {
 
 h1, h2, h3 {
     font-family: Georgia, serif;
+}
+
+#album-details-7 {
+     background-image: url(../images/ooberfuse.jpg);
+}
+
+#album-details-8 {
+     background-image: url(../images/gramz2.jpg);
+}
+
+#album-details-6 {
+     background-image: url(../images/kevin-max.jpeg);
 }
