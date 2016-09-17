@@ -191,13 +191,13 @@ function handleOtherLinkClicks(category, label) {
                             
                             <p>Katiee is an immensely talented up-and-coming artist from Toledeo Washington who did these two songs with us in Nashville. They're some of my favorite productions so far!</p>
                             <h5>While I'm Still Young</h5>
-                            <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                            <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/KatieCarney/WhileI'mStillYoung.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">I love the way the percussion and guitars gel together in this song.</p>
 
                             <h5>My Forget About You On</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/KatieCarney/MyForgetAboutYouOn.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description"></p>
@@ -214,7 +214,7 @@ function handleOtherLinkClicks(category, label) {
                             <p>Ooberfuse came to Nashville for the British Songwriters Exchange Camp that I worked. They decided to track 3 fully produced songs with us and this was my favorite of them.</p>
 
                             <h5>Like The Sun</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/Ooberfuse/LikeTheSun.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">I've always had a thing for music with this mood but I haven't had much chance to mix it yet. I had a very specific idea in mind for how the vocals should sound and I'm glad I achieved it.</p>                           
@@ -231,31 +231,31 @@ function handleOtherLinkClicks(category, label) {
                             <p>Will is an amazing composer in any genre so when he approached me about mixing his video game music compositions I was happy to help. Note that these are full songs and may take a second to load.</p>
 
                             <h5>Leaving The Beach</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/WillPadgett/LeavingTheBeach.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">One of three modern takes on a retro sound. I got to use my LFSR white noise generator, which I made in Max/MSP, to make the ocean sounds the way a Gameboy or NES would.</p>      
                             
                              <h5>Astral Surfing</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/WillPadgett/AstralSurfing.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">Part 2 of Leaving The Beach.</p>      
                             
                             <h5>Chill Time</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/WillPadgett/ChillTime.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description"></p>    
                             
                             <h5>Mip's House</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/WillPadgett/MipsHouse.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">I think limitation is the ultimate catalyst for creativity. We decided not to use any reverb on the main section of this song. It was very rewarding adding depth and separation purely with other methods.</p>    
                             
                             <h5>Opening Music</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/WillPadgett/OpeningMusic.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">This song is nice and cheesy like something that would be on Nintendo Wii.</p>    
@@ -272,25 +272,25 @@ function handleOtherLinkClicks(category, label) {
                             <p>Gramz wanted to do an old school hip hop record with live instrumentation. Mixing these 4 songs from it was a lot of fun.</p>
 
                             <h5>Eat</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/Gramz/Eat.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description"></p>
                             
                             <h5>Let's Go</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/Gramz/LetsGo.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description"></p>
 
                             <h5>Let The Good Times Roll</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/Gramz/LetTheGoodTimesRoll.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description"></p>
                             
                             <h5>Trying To Escape</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/Gramz/TryingToEscape.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description"></p>
@@ -311,7 +311,7 @@ function handleOtherLinkClicks(category, label) {
                             <p>Kevin's creativity and masterfulness as a singer make him a joy to engineer for.</p>
 
                             <h5>Under The Milky Way Tonight</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/KevinMax/UnderTheMilkyWay.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">This was the first song we did for Kevin and is one of my favorites. I wanted to make the choruses sound like they were blooming up out of each downbeat, while the sax floats above and around everything.</p>
@@ -319,7 +319,7 @@ function handleOtherLinkClicks(category, label) {
 
 
                             <h5>Last Night I Dreamt That Somebody Loved Me</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/KevinMax/LastNightIDreamtSomebodyLovedMe.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">I grew up loving The Smiths so to do a cover with Kevin was a real treat. I even got to play my bouzouki in it. Mixing a 13-minute song is a welcome challenge because you have to find ways to keep the listener interested. <a class="read-more-show hide" href="#">Read More</a> <span class="read-more-content"> I also try to keep things subtle enough so that there's a reward for multiple listenings. I recorded the cicadas in the treehouse behind Creative Caffeine and used some studio tricks to make them in rhythm with the music. I wanted the "All I want is you" background vocals to sound like giant heads looking down at the listener as spotlights illuminate them in the night. <a class="read-more-hide hide" href="#">Read Less</a></span></p>
@@ -327,7 +327,7 @@ function handleOtherLinkClicks(category, label) {
 
 
                             <h5>I Only Have Eyes For You</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/KevinMax/IOnlyHaveEyesForYou.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">This song has two layers of drumsets!</p>
@@ -335,7 +335,7 @@ function handleOtherLinkClicks(category, label) {
 
 
                             <h5>Moon Over Bourbon Street</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/KevinMax/MoonOverBourbonStreet.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description"></p>
@@ -357,7 +357,7 @@ function handleOtherLinkClicks(category, label) {
                             <p>Aubryn is an award winning singer songwriter. She started this album with Pino around the time when I was starting to engineer at Creative Caffeine. I'm glad I was able to be the main engineer, apart from interns and assistants, to have worked on it from start to finish. It is an eclectic album, to say the least.</p>
 
                             <h5>Nothin' Civil</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/Aubryn/NothinCivil.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">This is the first song we did with Aubryn. I enjoyed bringing out the darkness in a song about domestic abuse in the mix.</p>
@@ -365,7 +365,7 @@ function handleOtherLinkClicks(category, label) {
 
 
                             <h5>Cure My Disaster</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/Aubryn/CureMyDisaster.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">I love how the percussion gels in this one. I also played bouzouki in the bridge.</p>
@@ -373,7 +373,7 @@ function handleOtherLinkClicks(category, label) {
 
 
                             <h5>In The Field</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/Aubryn/IntheField.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
 
@@ -381,7 +381,7 @@ function handleOtherLinkClicks(category, label) {
 
 
                             <h5>Lady About Town</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/Aubryn/LadyAboutTown.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">I also played Bouzouki and did some small programming in this one.</p>
@@ -390,7 +390,7 @@ function handleOtherLinkClicks(category, label) {
 
 
                             <h5>Murder Ballad Blues</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/Aubryn/MurderBalladBlues.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">This was another song that needed to sound creepy, but this time with a strong blues element to it.</p>
@@ -398,7 +398,7 @@ function handleOtherLinkClicks(category, label) {
 
 
                             <h5>'Til The Reaper Comes</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/Aubryn/TiltheReaperComes.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">For this bonus track, I wanted to create a sound similar to trains without actually using any train samples.</p>
@@ -421,7 +421,7 @@ function handleOtherLinkClicks(category, label) {
                             <p>Music Box was the first project I was involved with when I started working with Pino at Creative Caffeine. I was involved in tracking and editing almost all of the songs. I am grateful to have been able to mix one of the songs.</p>
 
                             <h5> Drive <i>(Tracking/Editing/Mixing)</i></h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/BenSturgell/Drive.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">While I was tracking Ben's vocals, I suggested, based on his lyrics, that he try to give a performance that sounded like a controlled anger bubbling up to the surface. I reinforced this with the direction I took in the mix.</p>
@@ -450,7 +450,7 @@ function handleOtherLinkClicks(category, label) {
 
 
 
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/GnarlyParkers/BigAssWorld.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
 
@@ -458,7 +458,7 @@ function handleOtherLinkClicks(category, label) {
 
 
 
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/GnarlyParkers/DreamofYou.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
 
@@ -466,7 +466,7 @@ function handleOtherLinkClicks(category, label) {
 
                             <p class="description"></p>
 
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/GnarlyParkers/HopHead.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
 
@@ -475,7 +475,7 @@ function handleOtherLinkClicks(category, label) {
 
 
 
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/GnarlyParkers/SammyShake.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
 
@@ -483,7 +483,7 @@ function handleOtherLinkClicks(category, label) {
 
 
 
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/GnarlyParkers/SpinMeMinnie.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
 
@@ -491,7 +491,7 @@ function handleOtherLinkClicks(category, label) {
 
 
 
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/GnarlyParkers/SwindlinEyes.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
 
@@ -511,7 +511,7 @@ function handleOtherLinkClicks(category, label) {
                             </div>
                             <p>Adam is an up-and-coming music star who placed #2 in Nash Next Country 2015. We had been using Adam as a session player on some of other projects, so when he came to us for his song Rescue we were more than happy to help.</p>
                             <h5>Rescue</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" >
+                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handleOtherLinkClicks('pause',this.childNodes[1].src)" >
                                 <source src="audio/AdamSearan/Rescue.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">I loved the creative exploration I was allowed for this song. This mix has some pretty complexly changing vocal effects. I also played xylophone and an unorthdox style of bouzouki in the ending jam.</p>
