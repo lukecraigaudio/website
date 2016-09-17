@@ -73,6 +73,14 @@
 
   ga('create', 'UA-72082510-1', 'auto');
   ga('send', 'pageview');
+        
+function handleAlbumLinkClicks(event) {
+  ga('send', 'event', {
+    eventCategory: 'Album Link',
+    eventAction: 'click',
+    eventLabel: event.target.href
+  });
+}
 
 </script>
 </head>
@@ -108,7 +116,7 @@
                     <!--Katiee Carney Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2">
-                            <a class="showAlbum" target="1" href="#album-details-1" onclick="slideingFunction();"> <img class="album-img" alt="Katiee Carney" src="images/kaitee-carney.jpg" style="width:100%"></a>
+                            <a class="showAlbum" target="1" href="#album-details-1" onclick="slideingFunction();handleAlbumLinkClicks(e)"> <img class="album-img" alt="Katiee Carney" src="images/kaitee-carney.jpg" style="width:100%"></a>
                         </div>
                     </div>
                     <!--Kevin Max Thumbnail-->
