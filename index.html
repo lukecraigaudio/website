@@ -81,6 +81,14 @@ function handleAlbumLinkClicks(album) {
     eventLabel: album
   });
 }
+        
+function handleAlbumLinkClicks(category, label) {
+  ga('send', 'event', {
+    eventCategory: category,
+    eventAction: 'click',
+    eventLabel: label
+  });
+}
 
 </script>
 </head>
@@ -102,7 +110,7 @@ function handleAlbumLinkClicks(album) {
                 </div>
             </div>
             <div class="w3-col w3-container  m12 l7">
-                <p>I'm a listener. I love working with musicians. <a href="#contact">Let's make something beautiful together!</a>  I think an engineer's work should speak for itself, so here is mine:</p>
+                <p>I'm a listener. I love working with musicians. <a href="#contact" onclick="handleOtherLinkClicks('link','contact')">Let's make something beautiful together!</a>  I think an engineer's work should speak for itself, so here is mine:</p>
             </div>
         </div>
         <div class="line-dark"></div>
@@ -184,7 +192,7 @@ function handleAlbumLinkClicks(album) {
                             <p>Katiee is an immensely talented up-and-coming artist from Toledeo Washington who did these two songs with us in Nashville. They're some of my favorite productions so far!</p>
 
                             <h5>While I'm Still Young</h5>
-                            <audio controls preload="none">
+                            <audio controls preload="none" onplay="handleOtherLinkClicks('play','While I'm Still Young')">
                                 <source src="audio/KatieCarney/WhileI'mStillYoung.mp3" type="audio/mpeg"> Your browser does not support the audio element.
                             </audio>
                             <p class="description">I love the way the percussion and guitars gel together in this song.</p>
