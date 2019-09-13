@@ -81,8 +81,28 @@ body {
     padding-bottom: 3%;
 }
 
+/*
 img:hover {
     outline: groove #E2DFD9;
+}
+*/
+
+.outlineHover:hover {
+    outline: groove #E2DFD9;
+}
+
+.plugin-buttons > img {
+    height: 32px;
+}
+
+.plugin-title {
+    font-size: 24px;
+    font-family: Georgia, serif;
+    font-weight: 400;
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .album-details {
@@ -163,6 +183,11 @@ footer {
 .scrollbar {
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+.white {
+    color: #38353A;
+    background-color: #E2DFD9;
 }
 
 .line-dark {
