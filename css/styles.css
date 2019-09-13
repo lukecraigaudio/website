@@ -18,27 +18,29 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-   
-   
+
+
 }
 
 
 @media screen and (max-width: 480px) {
     body {
         background-image: none;
-        
+
     }
+
     #header-image {
         background-image: url(../images/console.jpg);
-         background-repeat: no-repeat;
+        background-repeat: no-repeat;
         background-color: darkgray;
-        
+
     }
+
     #more-work {
         background-image: url(../images/console.jpg);
-         background-repeat: no-repeat;
+        background-repeat: no-repeat;
         background-color: darkgray;
-       
+
         background-size: cover;
     }
 }
@@ -79,6 +81,20 @@ body {
 .img-grid {
     padding-right: 2%;
     padding-bottom: 3%;
+}
+
+.my-section {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.my-section::after,
+.my-section::before {
+
+    content: "";
+    display: table;
+    clear: both;
+
 }
 
 /*
@@ -137,12 +153,10 @@ footer {
 }
 
 
-.description{
-    
-}
+.description {}
 
 .hide {
-  display: none;
+    display: none;
 }
 
 /*
@@ -294,7 +308,8 @@ footer {
 .header-text p {
     margin-top: 10px;
 }
-footer p{
+
+footer p {
     font-size: 12px;
 }
 
@@ -304,31 +319,34 @@ article {
 }
 
 .no-background-blend-mode {
-  background-image: none !important;
-}    
+    background-image: none !important;
+}
+
 ul {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: Georgia, serif;
 }
 
 #album-details-7 {
-     background-image: url(../images/ooberfuse.jpg);
+    background-image: url(../images/ooberfuse.jpg);
 }
 
 #album-details-8 {
-     background-image: url(../images/gramz2.jpg);
+    background-image: url(../images/gramz2.jpg);
 }
 
 #album-details-6 {
-     background-image: url(../images/kevin-max.jpeg);
+    background-image: url(../images/kevin-max.jpeg);
 }
 
 #album-details-9 {
-      background-image: url(../images/will-padgett.jpg);
+    background-image: url(../images/will-padgett.jpg);
 }
 
 .link {
