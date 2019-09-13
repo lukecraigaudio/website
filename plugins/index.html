@@ -19,13 +19,13 @@
             // Hide all the album details
             jQuery('.hidden-album').hide();
             // Show the default album
-            jQuery('#album-details-1').show();
+            jQuery('#plugin-details-1').show();
             //When clicking one of the thumbnails...
             jQuery('.showAlbum').click(function() {
                 // Hide all the album details
                 jQuery('.hidden-album').hide();
                 // show the album details corrosponding to the  thumbnail
-                jQuery('#album-details-' + $(this).attr('target')).show();
+                jQuery('#plugin-details-' + $(this).attr('target')).show();
             });
         });
 
@@ -154,7 +154,7 @@
                     <!--Gamelanizer Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="1" href="#album-details-1" onclick="slideingFunction();handleAlbumLinkClicks('Gamelanizer')">
+                            <a class="showAlbum" target="1" href="#plugin-details-1" onclick="slideingFunction();handleAlbumLinkClicks('Gamelanizer')">
                                 <div class="w3-container w3-center white">
                                     <div class="plugin-title">Gamelanizer</div>
                                 </div>
@@ -165,7 +165,7 @@
                     <!--Musical Ring Mod Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="6" href="#album-details-6" onclick="slideingFunction();handleAlbumLinkClicks('Musical Ring Mod')">
+                            <a class="showAlbum" target="6" href="#plugin-details-6" onclick="slideingFunction();handleAlbumLinkClicks('Musical Ring Mod')">
                                 <div class="w3-container w3-center white">
                                     <div class="plugin-title">Musical Ring Mod</div>
                                 </div>
@@ -176,7 +176,7 @@
                     <!--Farkle Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="9" href="#album-details-9" onclick="slideingFunction();handleAlbumLinkClicks('Farkle')">
+                            <a class="showAlbum" target="9" href="#plugin-details-9" onclick="slideingFunction();handleAlbumLinkClicks('Farkle')">
                                 <div class="w3-container w3-center white">
                                     <div class="plugin-title">Farkle</div>
                                 </div><img class="album-img" alt="Farkle" src="images/farkle_screenshot.png" style="width:100%">
@@ -186,7 +186,7 @@
                     <!--Midi Wah Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="7" href="#album-details-7" onclick="slideingFunction();handleAlbumLinkClicks('Midi Wah')">
+                            <a class="showAlbum" target="7" href="#plugin-details-7" onclick="slideingFunction();handleAlbumLinkClicks('Midi Wah')">
                                 <div class="w3-container w3-center white">
                                     <div class="plugin-title">Midi Wah</div>
                                 </div> <img class="album-img" alt="Midi Wah" src="images/midiwah_screenshot.png" style="width:100%">
@@ -196,7 +196,7 @@
                     <!--Negative Delay Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="8" href="#album-details-8" onclick="slideingFunction();handleAlbumLinkClicks('Negative Delay')">
+                            <a class="showAlbum" target="8" href="#plugin-details-8" onclick="slideingFunction();handleAlbumLinkClicks('Negative Delay')">
                                 <div class="w3-container w3-center white">
                                     <div class="plugin-title">Negative Delay</div>
                                 </div><img class="album-img" alt="Negative Delay" src="images/negative_delay_screenshot.png" style="width:100%">
@@ -206,7 +206,7 @@
                     <!--Pan Subtractor Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="2" href="#album-details-2" onclick="slideingFunction();handleAlbumLinkClicks('Pan Subtractor')">
+                            <a class="showAlbum" target="2" href="#plugin-details-2" onclick="slideingFunction();handleAlbumLinkClicks('Pan Subtractor')">
                                 <div class="w3-container w3-center white">
                                     <div class="plugin-title">Pan Subtractor</div>
                                 </div><img class="album-img" alt="Pan Subtractor" src="images/pan_subtractor.png" style="width:100%">
@@ -222,7 +222,7 @@
             <div id="the-album-details-that-animate" class="w3-col m6 l7 w3-animate-right">
                 <div id="album-details">
                     <!--Gamelanizer Details-->
-                    <div class="w3-row hidden-album no-background-blend-mode" id="album-details-1">
+                    <div class="w3-row hidden-album no-background-blend-mode" id="plugin-details-1">
                         <div class="w3-container">
                             <h3>Gamelanizer</h3>
 
@@ -244,7 +244,7 @@
                         </div>
                     </div>
                     <!--Midi Wah Details-->
-                    <div class="w3-row hidden-album no-background-blend-mode" id="album-details-7">
+                    <div class="w3-row hidden-album no-background-blend-mode" id="plugin-details-7">
                         <div class="w3-container">
                             <h3>Midi Wah</h3>
 
@@ -255,7 +255,7 @@
                         </div>
                     </div>
                     <!--Farkle Details-->
-                    <div class="w3-row hidden-album no-background-blend-mode" id="album-details-9">
+                    <div class="w3-row hidden-album no-background-blend-mode" id="plugin-details-9">
                         <div class="w3-container">
                             <h3>Farkle</h3>
                             <p>Farkle is inspired by an effect heard on Van Dyke Parks' album <i>Song Cycle</i>.</p>
@@ -264,7 +264,7 @@
 
                     </div>
                     <!--Negative Delay Details-->
-                    <div class="w3-row hidden-album no-background-blend-mode" id="album-details-8">
+                    <div class="w3-row hidden-album no-background-blend-mode" id="plugin-details-8">
                         <div class="w3-container">
                             <h3>Negative Delay</h3>
                             <p>Negative Delay is inspired by an effect heard on the bridge section of the mono mix of Country Joe and the Fish's song <i>Grace</i>.</p>
@@ -272,7 +272,7 @@
                         </div>
                     </div>
                     <!--Musical Ring Mod Details-->
-                    <div class="w3-row hidden-album no-background-blend-mode" id="album-details-6">
+                    <div class="w3-row hidden-album no-background-blend-mode" id="plugin-details-6">
                         <div class="w3-container">
                             <h3>Musical Ring Mod</h3>                           
                             
@@ -282,7 +282,7 @@
                     </div>
 
                     <!--Pan Subtractor Details-->
-                    <div class="w3-row  hidden-album no-background-blend-mode" id="album-details-2">
+                    <div class="w3-row  hidden-album no-background-blend-mode" id="plugin-details-2">
                         <div class="w3-container">
                             <h3>Pan Subtractor</h3>
                             <p>This plug-in lets you remove an element of a stereo mix by pointing at the angle of the panned source.</p>                                   <a href="https://github.com/lukemcraig/PanningTheory/tree/source-seperation" class="w3-button w3-border plugin-buttons"><img src="images/GitHub-Mark-32px.png"> GitHub repo</a>
