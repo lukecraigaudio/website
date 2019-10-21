@@ -76,7 +76,9 @@ body {
 
 .song-list {}
 
-
+.not-allowed{
+    cursor: not-allowed;
+}
 
 .img-grid {
     padding-right: 2%;
