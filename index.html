@@ -7,28 +7,28 @@
     <title>LukeCraig.Audio</title>
     <meta name="author" content="Luke Craig">
     <meta name="description" content="Luke Craig is an audio engineer with a MS in Computer Science.">
-    <meta name="keywords" content="music,mixing,audio,engineer,hip hop,rock,americana,experimental,pro tools,trippy,nashville">
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="stylesheet" href="css/w3.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="/css/w3.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 
     <script>
-        jQuery(function () {
+        jQuery(function() {
             // Hide all the album details
             jQuery('.hidden-album').hide();
             // Show the default album
-            jQuery('#album-details-1').show();
+            jQuery('#plugin-details-1').show();
             //When clicking one of the thumbnails...
-            jQuery('.showAlbum').click(function () {
+            jQuery('.showAlbum').click(function() {
                 // Hide all the album details
                 jQuery('.hidden-album').hide();
                 // show the album details corrosponding to the  thumbnail
-                jQuery('#album-details-' + $(this).attr('target')).show();
+                jQuery('#plugin-details-' + $(this).attr('target')).show();
             });
         });
+
     </script>
     <script>
         function slideingFunction() {
@@ -40,10 +40,11 @@
         function removeSliding() {
             document.getElementById('the-album-details-that-animate').classList.remove('w3-animate-right');
         }
+
     </script>
     <script>
-        $(function () {
-            $('a[href*=#]:not([href=#])').click(function () {
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                     var target = $(this.hash);
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -56,57 +57,68 @@
                 }
             });
         });
+
     </script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             if (typeof window.getComputedStyle(document.body).backgroundBlendMode != 'undefined') {
                 $(".hidden-album").removeClass("no-background-blend-mode");
             }
         });
-    </script>
-    
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-72082510-1', 'auto');
-  ga('send', 'pageview');
-        
-function handleAlbumLinkClicks(album) {
-  ga('send', 'event', {
-    eventCategory: 'Album Link',
-    eventAction: 'click',
-    eventLabel: album
-  });
-}
-        
-function handleOtherLinkClicks(category, label) {
-  ga('send', 'event', {
-    eventCategory: category,
-    eventAction: 'click',
-    eventLabel: label
-  });
-}
-        
-function handlePause(category, label, currentTime, duration) {
-  var percentComplete = Math.round((currentTime/duration)*100);
-    var stringLabel = label + " " + percentComplete + "%";
-    handleOtherLinkClicks(category,stringLabel);
-   
-}
-</script>
-    
+    </script>
+
     <script>
-    document.addEventListener('play', function(e){
-    var audios = document.getElementsByTagName('audio');
-    for(var i = 0, len = audios.length; i < len;i++){
-        if(audios[i] != e.target){
-            audios[i].pause();
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-72082510-1', 'auto');
+        ga('send', 'pageview');
+
+        function handleAlbumLinkClicks(album) {
+            ga('send', 'event', {
+                eventCategory: 'Album Link',
+                eventAction: 'click',
+                eventLabel: album
+            });
         }
-    }
-}, true);
+
+        function handleOtherLinkClicks(category, label) {
+            ga('send', 'event', {
+                eventCategory: category,
+                eventAction: 'click',
+                eventLabel: label
+            });
+        }
+
+        function handlePause(category, label, currentTime, duration) {
+            var percentComplete = Math.round((currentTime / duration) * 100);
+            var stringLabel = label + " " + percentComplete + "%";
+            handleOtherLinkClicks(category, stringLabel);
+
+        }
+
+    </script>
+
+    <script>
+        document.addEventListener('play', function(e) {
+            var audios = document.getElementsByTagName('audio');
+            for (var i = 0, len = audios.length; i < len; i++) {
+                if (audios[i] != e.target) {
+                    audios[i].pause();
+                }
+            }
+        }, true);
+
     </script>
 
 </head>
@@ -128,7 +140,7 @@ function handlePause(category, label, currentTime, duration) {
                 </div>
             </div>
             <div class="w3-col w3-container  m12 l7">
-                <p>I'm a listener. I love working with musicians. <a href="#contact" onclick="handleOtherLinkClicks('link','contact')">Let's make something beautiful together!</a>  I think an engineer's work should speak for itself, so here is mine:</p>
+
             </div>
         </div>
         <div class="line-dark"></div>
@@ -137,60 +149,72 @@ function handlePause(category, label, currentTime, duration) {
         <div id="albums-and-details" class="w3-row">
 
             <div class="w3-col w3-container m6 l5 w3-animate-left" id="main">
-                <h2>Projects</h2>
+                <h2>Open Source Plug-Ins</h2>
                 <div id="album-grid">
-                    <!--Katiee Carney Thumbnail-->
+                    <!--Gamelanizer Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="1" href="#album-details-1" onclick="slideingFunction();handleAlbumLinkClicks('Katiee Carney')"> <img class="album-img" alt="Katiee Carney" src="images/kaitee-carney.jpg" style="width:100%"></a>
+                            <a class="showAlbum" target="1" href="#plugin-details-1" onclick="slideingFunction();handleAlbumLinkClicks('Gamelanizer')">
+                                <div class="w3-container w3-center white">
+                                    <div class="plugin-title">Gamelanizer</div>
+                                </div>
+                                <img class="album-img" alt="Gamelanizer" src="images/gamelanizer_screenshot.png" style="width:100%">
+                            </a>
                         </div>
                     </div>
-                    <!--Kevin Max Thumbnail-->
+                    <!--Overtone Filter Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="6" href="#album-details-6" onclick="slideingFunction();handleAlbumLinkClicks('Kevin Max')"> <img class="album-img" alt="Kevin Max - Starry Eyes Suprise" src="images/kevin-max.jpeg" style="width:100%"></a>
+                            <a class="showAlbum" target="7" href="#plugin-details-7" onclick="slideingFunction();handleAlbumLinkClicks('Overtone Filter')">
+                                <div class="w3-container w3-center white">
+                                    <div class="plugin-title">Overtone Filter</div>
+                                </div> <img class="album-img" alt="Overtone Filter" src="images/overtonefilter_screenshot.png" style="width:100%">
+                            </a>
                         </div>
                     </div>
-                     <!--Will Padgett Thumbnail-->
+                    <!--Musical Ring Mod Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="9" href="#album-details-9" onclick="slideingFunction();handleAlbumLinkClicks('Will Padgett')"> <img class="album-img" alt="Will Padgett - Video Game Composition Reel" src="images/will-padgett.jpg" style="width:100%"></a>
+                            <a class="not-allowed">
+                                <!--target="6" href="#plugin-details-6" onclick="slideingFunction();handleAlbumLinkClicks('Musical Ring Mod')"-->
+                                <div class="w3-container w3-center white">
+                                    <div class="plugin-title">Musical Ring Mod</div>
+                                </div>
+                                <img class="album-img" alt="Musical Ring Mod" src="images/coming_soon_ring_mod.png" style="width:100%">
+                            </a>
                         </div>
                     </div>
-                    <!--Ooberfuse Thumbnail-->
+                    <!--Pan Subtractor Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="7" href="#album-details-7" onclick="slideingFunction();handleAlbumLinkClicks('Ooberfuse')"> <img class="album-img" alt="Ooberfuse" src="images/ooberfuse.jpg" style="width:100%"></a>
+                            <a class="not-allowed">
+                                <!--target="2" href="#plugin-details-2" onclick="slideingFunction();handleAlbumLinkClicks('Pan Subtractor')"-->
+                                <div class="w3-container w3-center white">
+                                    <div class="plugin-title">Pan Subtractor</div>
+                                </div><img class="album-img" alt="Pan Subtractor" src="images/coming_soon_pan.png" style="width:100%">
+                            </a>
                         </div>
                     </div>
-                    <!--Gramz Thumbnail-->
+                    <!--Negative Delay Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="8" href="#album-details-8" onclick="slideingFunction();handleAlbumLinkClicks('Gramz')"> <img class="album-img" alt="Gramz" src="images/gramz2.jpg" style="width:100%"></a>
+                            <a class="not-allowed">
+                                <!--target="8" href="#plugin-details-8" onclick="slideingFunction();handleAlbumLinkClicks('Negative Delay')"-->
+                                <div class="w3-container w3-center white">
+                                    <div class="plugin-title">Negative Delay</div>
+                                </div><img class="album-img" alt="Negative Delay" src="images/coming_soon_negative_delay.png" style="width:100%">
+                            </a>
                         </div>
                     </div>
-                    <!--Aubryn Thumbnail-->
+                    <!--Farkle Thumbnail-->
                     <div class="w3-col m6 l4 img-grid">
                         <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="2" href="#album-details-2" onclick="slideingFunction();handleAlbumLinkClicks('Aubryn')"> <img class="album-img" alt="Aubryn - Nothin' Civil" src="images/aubryn.jpg" style="width:100%"></a>
-                        </div>
-                    </div>
-                    <!--Ben Sturgell Thumbnail-->
-                    <div class="w3-col m6 l4 img-grid">
-                        <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="3" href="#album-details-3" onclick="slideingFunction();handleAlbumLinkClicks('Ben Sturgell')"> <img class="album-img" src="images/ben-sturgell.jpg" style="width:100%" alt="Ben Sturgell - Music Box"></a>
-                        </div>
-                    </div>
-                    <!--Gnarly Parkers Thumbnail-->
-                    <div class="w3-col m6 l4 img-grid">
-                        <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="4" href="#album-details-4" onclick="slideingFunction();handleAlbumLinkClicks('Gnarly Parkers')"> <img class="album-img" alt="Gnarly Parkers - Hop Heads EP" src="images/gnarly-parkers.jpeg" style="width:100%"></a>
-                        </div>
-                    </div>
-                    <!--Adam Searan Thumbnail-->
-                    <div class="w3-col m6 l4 img-grid">
-                        <div class="w3-card-2 outlineHover">
-                            <a class="showAlbum" target="5" href="#album-details-5" onclick="slideingFunction();handleAlbumLinkClicks('Adam Searan')"> <img class="album-img" src="images/adam-searan.jpg" style="width:100%" alt="Adam Searan - Rescue"></a>
+                            <a class="not-allowed">
+                                <!--target="9" href="#plugin-details-9" onclick="slideingFunction();handleAlbumLinkClicks('Farkle')"-->
+                                <div class="w3-container w3-center white">
+                                    <div class="plugin-title">Farkle</div>
+                                </div><img class="album-img" alt="Farkle" src="images/coming_soon.png" style="width:100%">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -200,341 +224,105 @@ function handlePause(category, label, currentTime, duration) {
 
             <div id="the-album-details-that-animate" class="w3-col m6 l7 w3-animate-right">
                 <div id="album-details">
-                     <!--Katiee Details-->
-                    <div class="w3-row hidden-album no-background-blend-mode" id="album-details-1">
+                    <!--Gamelanizer Details-->
+                    <div class="w3-row hidden-album no-background-blend-mode" id="plugin-details-1">
                         <div class="w3-container">
-                            <h3>Katiee Carney</h3>
-                            
-                            <h5>Tracking/Editing/Mixing</h5>
-                            
-                            <p>Katiee is an immensely talented up-and-coming artist from Toledeo Washington who did these two songs with us in Nashville. They're some of my favorite productions so far!</p>
-                            <h5>While I'm Still Young</h5>
-                            <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/KatieCarney/WhileI'mStillYoung.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">I love the way the percussion and guitars gel together in this song.</p>
+                            <h3>Gamelanizer</h3>
 
-                            <h5>My Forget About You On</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/KatieCarney/MyForgetAboutYouOn.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description"></p>
+                            <p>Gamelanizer applies the <i>mipil</i> or <i>pipilan</i> transformation from Javanese gamelan music to audio signals. Think of it like a rhythmic, multitap, pitch-shifting delay, except the wet sound begins earlier than the input.</p>
+                            <div class="my-section">
+                                <a href="https://github.com/lukemcraig/DAFx19-Gamelanizer" class="w3-col l4 w3-button w3-border plugin-buttons"><img src="images/GitHub-Mark-32px.png"> GitHub Repo</a>
 
-                        </div>
-                    </div>
-                     <!--Ooberfuse Details-->
-                    <div class="w3-row hidden-album no-background-blend-mode" id="album-details-7">
-                        <div class="w3-container">
-                            <h3>Ooberfuse</h3>
-                            
-                            <h5>Tracking/Editing/Mixing</h5>
-                            
-                            <p>Ooberfuse came to Nashville for the British Songwriters Exchange Camp that I worked. They decided to track 3 fully produced songs with us and this was my favorite of them.</p>
+                                <a href="https://codedocs.xyz/lukemcraig/DAFx19-Gamelanizer/" class="w3-col l4 w3-button w3-border plugin-buttons"><img src="images/docs2x.png"> Documentation</a>
 
-                            <h5>Like The Sun</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/Ooberfuse/LikeTheSun.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">I've always had a thing for music with this mood but I haven't had much chance to mix it yet. I had a very specific idea in mind for how the vocals should sound and I'm glad I achieved it.</p>                           
-
-                        </div>
-                    </div>
-                     <!--Will Padgett Details-->
-                    <div class="w3-row hidden-album no-background-blend-mode" id="album-details-9">
-                        <div class="w3-container">
-                            <h3>Will Padgett</h3>
-                            <h4>Video Game Composition Reel</h4>
-                            <h5>Mixing</h5>
-                            
-                            <p>Will is an amazing composer in any genre so when he approached me about mixing his video game music compositions I was happy to help. Note that these are full songs and may take a second to load.</p>
-
-                            <h5>Leaving The Beach</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/WillPadgett/LeavingTheBeach.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">One of three modern takes on a retro sound. I got to use my LFSR white noise generator, which I made in Max/MSP, to make the ocean sounds the way a Gameboy or NES would.</p>      
-                            
-                             <h5>Astral Surfing</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/WillPadgett/AstralSurfing.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">Part 2 of Leaving The Beach.</p>      
-                            
-                            <h5>Chill Time</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/WillPadgett/ChillTime.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description"></p>    
-                            
-                            <h5>Mip's House</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/WillPadgett/MipsHouse.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">I think limitation is the ultimate catalyst for creativity. We decided not to use any reverb on the main section of this song. It was very rewarding adding depth and separation purely with other methods.</p>    
-                            
-                            <h5>Opening Music</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/WillPadgett/OpeningMusic.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">This song is nice and cheesy like something that would be on Nintendo Wii.</p>    
-                        </div>
-                        
-                    </div>
-                     <!--Gramz Details-->
-                    <div class="w3-row hidden-album no-background-blend-mode" id="album-details-8">
-                        <div class="w3-container">
-                            <h3>Gramz</h3>
-                            <h4>Highly Favored</h4>
-                            <h5>Tracking/Editing/Mixing</h5>
-                            
-                            <p>Gramz wanted to do an old school hip hop record with live instrumentation. Mixing these 4 songs from it was a lot of fun.</p>
-
-                            <h5>Eat</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/Gramz/Eat.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description"></p>
-                            
-                            <h5>Let's Go</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/Gramz/LetsGo.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description"></p>
-
-                            <h5>Let The Good Times Roll</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/Gramz/LetTheGoodTimesRoll.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description"></p>
-                            
-                            <h5>Trying To Escape</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/Gramz/TryingToEscape.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description"></p>
-
-                        </div>
-                    </div>
-                    <!--Kevin Details-->
-                    <div class="w3-row hidden-album no-background-blend-mode" id="album-details-6">
-                        <div class="w3-container">
-                            <h3>Kevin Max</h3>
-                            <h4>Starry Eyes Surprise</h4>
-                            <h5>Tracking/Editing/Mixing</h5>
-                            <div class="buy-thumbnail-div">
-                                <a target="_blank" href="https://missinginkshop.com/kevinmax/store/starry-eyes-surprise">
-                                    <img class="buy-thumbnail" src="images/kevin-max.jpeg" alt="Buy Starry Eyes Suprise"> Buy it
-                                </a>
+                                <a href="http://dafx2019.bcu.ac.uk/papers/DAFx2019_paper_52.pdf" class="w3-col l4 w3-button w3-border plugin-buttons"><img src="images/DAFx.png"> DAFx19 Paper</a>
                             </div>
-                            <p>Kevin's creativity and masterfulness as a singer make him a joy to engineer for.</p>
-
-                            <h5>Under The Milky Way Tonight</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/KevinMax/UnderTheMilkyWay.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">This was the first song we did for Kevin and is one of my favorites. I wanted to make the choruses sound like they were blooming up out of each downbeat, while the sax floats above and around everything.</p>
-
-
-
-                            <h5>Last Night I Dreamt That Somebody Loved Me</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/KevinMax/LastNightIDreamtSomebodyLovedMe.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">I grew up loving The Smiths so to do a cover with Kevin was a real treat. I even got to play my bouzouki in it. Mixing a 13-minute song is a welcome challenge because you have to find ways to keep the listener interested. <a class="read-more-show hide" href="#">Read More</a> <span class="read-more-content"> I also try to keep things subtle enough so that there's a reward for multiple listenings. I recorded the cicadas in the treehouse behind Creative Caffeine and used some studio tricks to make them in rhythm with the music. I wanted the "All I want is you" background vocals to sound like giant heads looking down at the listener as spotlights illuminate them in the night. <a class="read-more-hide hide" href="#">Read Less</a></span></p>
-
-
-
-                            <h5>I Only Have Eyes For You</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/KevinMax/IOnlyHaveEyesForYou.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">This song has two layers of drumsets!</p>
-
-
-
-                            <h5>Moon Over Bourbon Street</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/KevinMax/MoonOverBourbonStreet.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description"></p>
-
-                        </div>
-                    </div>
-
-                    <!--Aubryn Details-->
-                    <div class="w3-row  hidden-album no-background-blend-mode" id="album-details-2">
-                        <div class="w3-container">
-                            <h3>Aubryn</h3>
-                            <h4>Nothin' Civil EP</h4>
-                            <h5>Tracking/Editing/Mixing</h5>
-                            <div class="buy-thumbnail-div">
-                                <a target="_blank" href="http://aubrynmusic.bandcamp.com/album/nothin-civil-ep">
-                                    <img class="buy-thumbnail" src="images/aubryn.jpg" alt="Buy Nothin' Civil"> Buy it
-                                </a>
+                            <div class="w3-col w3-margin-bottom">
+                                <img src="images/gamelanizer_screenshot.png" width="100%">
                             </div>
-                            <p>Aubryn is an award winning singer songwriter. She started this album with Pino around the time when I was starting to engineer at Creative Caffeine. I'm glad I was able to be the main engineer, apart from interns and assistants, to have worked on it from start to finish. It is an eclectic album, to say the least.</p>
-
-                            <h5>Nothin' Civil</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/Aubryn/NothinCivil.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">This is the first song we did with Aubryn. I enjoyed bringing out the darkness in a song about domestic abuse in the mix.</p>
-
-
-
-                            <h5>Cure My Disaster</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/Aubryn/CureMyDisaster.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">I love how the percussion gels in this one. I also played bouzouki in the bridge.</p>
-
-
-
-                            <h5>In The Field</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/Aubryn/IntheField.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-
-                            <p class="description">This song was apparently inspired by the X-Files. We had Black Cat Sylvester do some surreal glitchy programming. It was interesting getting that to blend with the acoustic instruments.</p>
-
-
-                            <h5>Lady About Town</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/Aubryn/LadyAboutTown.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">I also played Bouzouki and did some small programming in this one.</p>
-
-
-
-
-                            <h5>Murder Ballad Blues</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/Aubryn/MurderBalladBlues.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">This was another song that needed to sound creepy, but this time with a strong blues element to it.</p>
-
-
-
-                            <h5>'Til The Reaper Comes</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/Aubryn/TiltheReaperComes.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">For this bonus track, I wanted to create a sound similar to trains without actually using any train samples.</p>
-
-
-
-
-                        </div>
-                    </div>
-                    <!--Ben Sturgell Details-->
-                    <div class="w3-row  hidden-album no-background-blend-mode" id="album-details-3">
-                        <div class="w3-container">
-                            <h3>Ben Sturgell</h3>
-                            <h4>Music Box</h4>
-                            <div class="buy-thumbnail-div">
-                                <a target="_blank" href="https://itunes.apple.com/us/album/music-box/id994931490">
-                                    <img class="buy-thumbnail" src="images/ben-sturgell.jpg" alt="Buy Music Box"> Buy it
-                                </a>
+                            <div class="w3-col l6">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/dPmx4D8Ckos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <p>Music Box was the first project I was involved with when I started working with Pino at Creative Caffeine. I was involved in tracking and editing almost all of the songs. I am grateful to have been able to mix one of the songs.</p>
-
-                            <h5> Drive <i>(Tracking/Editing/Mixing)</i></h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/BenSturgell/Drive.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">While I was tracking Ben's vocals, I suggested, based on his lyrics, that he try to give a performance that sounded like a controlled anger bubbling up to the surface. I reinforced this with the direction I took in the mix.</p>
-
-
-
-
-
-
-                        </div>
-                    </div>
-                    <!--Gnarly Parkers Details-->
-                    <div class="w3-row  hidden-album no-background-blend-mode" id="album-details-4">
-                        <div class="w3-container">
-                            <h3>Gnarly Parkers</h3>
-                            <h4>Hop Heads EP</h4>
-                            <h5>Tracking</h5>
-                            <div class="buy-thumbnail-div">
-                                <a target="_blank" href="https://itunes.apple.com/us/album/hop-heads-ep/id1031378634">
-                                    <img class="buy-thumbnail" src="images/gnarly-parkers.jpeg" alt="Buy Hop Heads EP"> Buy it
-                                </a>
+                            <div class="w3-col l6">
+                                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/816279753&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                             </div>
-                            <p>Tracking this EP with all of the Gnarly Parkers at Creative Caffeine was loads of fun. They wanted an authentic swing record that had the polish of modern sounds.</p>
-
-                            <h5>Big Ass World</h5>
-
-
-
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/GnarlyParkers/BigAssWorld.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-
-                            <h5>Dream of You</h5>
-
-
-
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/GnarlyParkers/DreamofYou.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-
-                            <h5>Hop Heads</h5>
-
-                            <p class="description"></p>
-
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/GnarlyParkers/HopHead.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-
-
-                            <h5>Sammy Shake</h5>
-
-
-
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/GnarlyParkers/SammyShake.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-
-                            <h5>Spin Me Minnie</h5>
-
-
-
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/GnarlyParkers/SpinMeMinnie.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-
-                            <h5>Swindlin' Eyes</h5>
-
-
-
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/GnarlyParkers/SwindlinEyes.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-
-
 
                         </div>
                     </div>
-                    <!--Adam Searan-->
-                    <div class="w3-row  hidden-album no-background-blend-mode" id="album-details-5">
+                    <!--Overtone Filter Details-->
+                    <div class="w3-row hidden-album no-background-blend-mode" id="plugin-details-7">
                         <div class="w3-container">
-                            <h3>Adam Searan</h3>
-                            <h5>Tracking/Editing/Mixing</h5>
-                            <div class="buy-thumbnail-div">
-                                <a target="_blank" href="http://www.iamtheband.net/">
-                                    <img class="buy-thumbnail" src="images/adam-searan.jpg" alt="Go to Adam's Website">Adam
-                                </a>
+                            <h3>Overtone Filter</h3>
+
+                            <p>Simulate sygyt style overtone singing (a.k.a. throat singing) by emphasizing MIDI-selected harmonics of an audio signal.</p>
+
+                            <div class="my-section">
+                                <a href="https://github.com/lukemcraig/OvertoneFilter" class="w3-col w3-button w3-border plugin-buttons"><img src="images/GitHub-Mark-32px.png"> GitHub Repo</a>
                             </div>
-                            <p>Adam is an up-and-coming music star who placed #2 in Nash Next Country 2015. We had been using Adam as a session player on some of other projects, so when he came to us for his song Rescue we were more than happy to help.</p>
-                            <h5>Rescue</h5>
-                             <audio controls preload="none" onplay="handleOtherLinkClicks('play',this.childNodes[1].src)" onended="handleOtherLinkClicks('ended',this.childNodes[1].src)" onpause="handlePause('pause',this.childNodes[1].src, this.currentTime, this.duration)" >
-                                <source src="audio/AdamSearan/Rescue.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-                            </audio>
-                            <p class="description">I loved the creative exploration I was allowed for this song. This mix has some pretty complexly changing vocal effects. I also played xylophone and an unorthdox style of bouzouki in the ending jam.</p>
+                            <div class="w3-col w3-margin-bottom">
+                                <img src="images/overtonefilter_screenshot.png" width="100%">
+                            </div>
+                            <div class="w3-col w3-margin-bottom">
+                                The following GIF shows a spectrogram of the signal before and after processing. Notice that the melody in the second frame is created only from the harmonics in the original signal.
+                                <img src="images/overtone_filter_spec.gif" width="100%">
+                            </div>
+                            <div class="w3-col l6">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/OiNwpGFCm-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="w3-col l6">
+                                <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/882602458&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                            </div>
+
                         </div>
                     </div>
+                    <!--Farkle Details-->
+                    <div class="w3-row hidden-album no-background-blend-mode" id="plugin-details-9">
+                        <div class="w3-container">
+                            <h3>Farkle</h3>
+                            <p>Farkle is inspired by an effect heard on Van Dyke Parks' album <i>Song Cycle</i>.</p>
+                            <div class="my-section">
+                                <a href="https://github.com/lukemcraig/farkle" class="w3-col w3-button w3-border plugin-buttons"><img src="images/GitHub-Mark-32px.png"> GitHub Repo</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--Negative Delay Details-->
+                    <div class="w3-row hidden-album no-background-blend-mode" id="plugin-details-8">
+                        <div class="w3-container">
+                            <h3>Negative Delay</h3>
+                            <p>Negative Delay is inspired by an effect heard on the bridge section of the mono mix of Country Joe and the Fish's song <i>Grace</i>.</p>
+                            <div class="my-section">
+                                <a href="https://github.com/lukemcraig/NegativeDelay" class="w3-col w3-button w3-border plugin-buttons"><img src="images/GitHub-Mark-32px.png"> GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Musical Ring Mod Details-->
+                    <div class="w3-row hidden-album no-background-blend-mode" id="plugin-details-6">
+                        <div class="w3-container">
+                            <h3>Musical Ring Mod</h3>
+
+                            <p>This plug-in lets you input the note value as sidechain midi input. This way the ring modulation has a consistent tone from note to note, letting you use it in a musical context.</p>
+
+                            <div class="my-section">
+                                <a href="https://github.com/lukemcraig/MusicalRingMod" class="w3-col w3-button w3-border plugin-buttons"><img src="images/GitHub-Mark-32px.png"> GitHub Repo</a>
+                            </div>
+                            <div class="w3-col">
+                                <img src="images/ringmod_screenshot.png" width="100%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Pan Subtractor Details-->
+                    <div class="w3-row  hidden-album no-background-blend-mode" id="plugin-details-2">
+                        <div class="w3-container">
+                            <h3>Pan Subtractor</h3>
+                            <p>This plug-in lets you remove an element of a stereo mix by pointing at the angle of the panned source.</p>
+                            <div class="my-section">
+                                <a href="https://github.com/lukemcraig/PanningTheory/tree/source-seperation" class="w3-col w3-button w3-border plugin-buttons"><img src="images/GitHub-Mark-32px.png"> GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="w3-row grey-box">
 
@@ -545,100 +333,29 @@ function handlePause(category, label, currentTime, duration) {
         <div class="line-blue"></div>
         <div class="line-white"></div>
 
-
-
-        <div class="w3-row header-text w3-container" id="more-work">
-            <div id="other-work-header" class="w3-col">
-                <h2>Other Work</h2>
-            </div>
-            <div id="other-work-left" class="w3-col l6 m6">
-                <ul>
-                    <li>Starlito -Passed The Present <i>Tracking</i></li>
-                    <li>Butron - Songs For Kids With Beards <i>Assisting</i></li>
-                    <li>Flatland Funk Donors - Upcoming <i>Tracking/Editing/Mixing</i></li>
-                    <li>Katie J. - Upcoming <i>Tracking/Editing/Mixing</i></li>
-                    <li>Thomas Rhett - When I Was Your Man <i>Tracking</i></li>
-                    <li>Danny Salazar - Songs of Victory <i>Tracking/Editing/Mixing</i></li>
-                    <li>Byron Rice - Sink In <i>Tracking/Editing</i></li>
-                    <li>The Aquaducks - Open Season <i>Tracking</i></li>
-                                   
-                </ul>
-            </div>
-            <div id="other-work-right" class="w3-col l6 m6">
-                <ul>
-                    <li>Light of Marfa - Please Don't Wait For Me <i>Tracking</i></li>     
-                    <li>Applegate Nance - Upcoming <i>Tracking/Editing/Mixing</i></li>
-                    <li>Chucky V - Upcoming <i>Tracking/Editing/Mixing</i></li>                                  
-                    <li>Allen McKendree - 4 Demos <i>Tracking/Editing/Mixing</i></li>
-                    <li>British Songwriters Exchange Camp <i>Tracking/Editing/Mixing</i></li>
-                    <li>The Voodoo Fix <i>Tracking</i></li>
-                    <li>Jessica Cayne - Upcoming <i>Tracking/Editing/Mixing</i></li>
-                    <li>So many others...</li>
-                </ul>
-            </div>
-            <div id="testimonials" class="w3-col w3-container">
-
-                <h2>Testimonials</h2>
-                <div class="quotes">    
-
-                    <blockquote>
-                        <p>&ldquo;I haven't worked with an engineer producer with better instincts than Luke Craig. He is meticulous but in a totally open manner, in which it is obvious that the music is the most important methodology.&rdquo;</p>
-                        <p>&mdash; Kevin Max</p>
-                    </blockquote>
-
-                    <blockquote>
-                        <p>&ldquo;Luke has been the essential element with me, for our production team at the Boomlabs. His organizational, technical and musical skills make him competitive on any platform.&rdquo;</p>
-                        <p>&mdash; Pino Squillace</p>
-                    </blockquote>
-                    
-                    <blockquote>
-                        <p>&ldquo;Luke's contribution to recording and mixing a project is invaluable. He's organized, focused and very competent in his craft. Quickest and smoothest experience I've had tracking in a studio.&rdquo;</p>
-                        <p>&mdash; Will Padgett of Gnarly Parkers</p>
-                    </blockquote>
-                    
-                             <blockquote>
-                        <p>&ldquo;Luke has an incredible ear and is someone I would definitely like to work with again in the future. Some of my favorite moments on my record were little details he put in that added so much character to the songs. I could tell he really payed attention to the lyrics and meaning of the songs and put just the right amount of punch where it would create the greatest effect. &rdquo;</p>
-                        <p>&mdash; Aubryn Stevens</p>
-                    </blockquote>
-
-                </div>
-                <!-- .quotes -->
-                <script src="quovolver/jquery.quovolver.js"></script>
-                <script>
-                    $(document).ready(function () {
-                        $('.quotes').quovolver();
-
-                    });
-                </script>
-
-            </div>
-        </div>
-        <div class="line-white"></div>
-        <div class="line-blue"></div>
         <div class="w3-col m12 l12 w3-container w3-center" id="contact">
             <h2>Contact Me</h2>
 
             <h4>
-            <script type="text/javascript" >
+                <script type="text/javascript">
+                    {
+                        coded = "rLB6UqGdTGLAdR@TWGdr.URW"
+                        key = "ak7jcJ6sg5rbA3Yfuy8hCo0WGBipUwxZT4qFQVDnLtMNeRHElKdP1S2X9vOzIm"
+                        shift = coded.length
+                        link = ""
+                        for (i = 0; i < coded.length; i++) {
+                            if (key.indexOf(coded.charAt(i)) == -1) {
+                                ltr = coded.charAt(i)
+                                link += (ltr)
+                            } else {
+                                ltr = (key.indexOf(coded.charAt(i)) - shift + key.length) % key.length
+                                link += (key.charAt(ltr))
+                            }
+                        }
+                        document.write("<a href='mailto:" + link + "'>" + link + "</a>")
+                    }
 
-{ coded = "rLB6UqGdTGLAdR@TWGdr.URW"
-  key = "ak7jcJ6sg5rbA3Yfuy8hCo0WGBipUwxZT4qFQVDnLtMNeRHElKdP1S2X9vOzIm"
-  shift=coded.length
-  link=""
-  for (i=0; i<coded.length; i++) {
-    if (key.indexOf(coded.charAt(i))==-1) {
-      ltr = coded.charAt(i)
-      link += (ltr)
-    }
-    else {     
-      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-      link += (key.charAt(ltr))
-    }
-  }
-document.write("<a href='mailto:"+link+"'>"+link+"</a>")
-}
-
-</script><noscript>Sorry, you need Javascript on to email me.</noscript>
+                </script><noscript>Sorry, you need Javascript on to email me.</noscript>
 
             </h4>
 
@@ -665,21 +382,22 @@ document.write("<a href='mailto:"+link+"'>"+link+"</a>")
         $('.read-more-show, .read-more-hide').removeClass('hide')
 
         // Set up the toggle effect:
-        $('.read-more-show').on('click', function (e) {
+        $('.read-more-show').on('click', function(e) {
             $(this).next('.read-more-content').removeClass('hide');
             $(this).addClass('hide');
             e.preventDefault();
         });
 
         // Changes contributed by @diego-rzg
-        $('.read-more-hide').on('click', function (e) {
+        $('.read-more-hide').on('click', function(e) {
             var p = $(this).parent('.read-more-content');
             p.addClass('hide');
             p.prev('.read-more-show').removeClass('hide'); // Hide only the preceding "Read More"
             e.preventDefault();
         });
+
     </script>
-    
+
 </body>
 
 </html>
